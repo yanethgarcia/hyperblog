@@ -8,3 +8,5 @@ Me encanta la comida sana
 Su vida ha sido maravillosa
 
 >>>>>>> cabecera
+
+Estoy agregando un cambio en GitHub
