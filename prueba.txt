@@ -1,4 +1,10 @@
 Hola
+<<<<<<< HEAD
 Sigo haciendo ejemplos
 
 Me encanta la comida sana
+=======
+
+Su vida ha sido maravillosa
+
+>>>>>>> cabecera
