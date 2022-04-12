@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>.: Examen :.</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="cabecera">
+            <img id="logo"
+                src="https://cdn2.iconfinder.com/data/icons/seo-and-website/100/SEO_blog_optimation_article-64.png" />
+            Examen
+            <span id="tagline">Git y Github</span>
+        </div>
+        <div id="post">
+            <h1>Alumno: Lucas Zupan</h1>
+            <ol>
+                <li> 
+		    <h3>Que es un sistema de control de versiones?</h3> 
+		Los sistemas de control de versiones son un tipo de aplicación con la 
+                función de gestionar los cambios de un conjunto de elementos. Deben proporcionar los mecanismos para almacenar los archivos, 
+                reliazar cambios sobre estos y registrar historicamente todas las modificaciones.
+                </li>
+                <li>
+                    <h3>Cual es la diferencia entre git y github?</h3> <strong>Git</strong> es el software de control de versiones, mientras que 
+                    <strong>GitHub</strong> es una plataforma donde alojar repositorios de git. Resuelve muchas cosas como gestionar los permisos a 
+                    otros usuarios para que colaboren en un mismo repositorio, entre otras funciones.
+                </li> 
+		<li>
+                    <h3>Cómo creo una rama en git?</h3>
+                    Agregar una nueva rama localmente:
+		   <code> git branch &lt;nueva_rama&gt;</code>, o con el comando <code> git checkout -b &lt;nueva_rama&gt;</code> para crear y 
+cambiar de rama simultaneamente.<br> 
+                   Agregar una nueva rama al repositorio remoto: <code>git push --set-upstream origin &lt;nueva_rama&gt;</code>
+                </li>
+                <li>
+                    <h3>Cómo clono un repositorio?</h3>
+                    Clono un repositorio con el comando:
+<code> git clone &lt;ruta_repositorio&gt; </code><br>
+<u><em>ruta_repositorio:</em></u> Puede ser una URL para descargar por HTTPS, o un host remoto para descargarlo por SSH (<code>usuario@host:ruta</code>)
+                </li>
+                <li>
+                    <h3>Cómo puedo bajar los ultimos cambios de un repositorio?</h3>
+                    Con el comando <code> git pull </code>
+                </li>
+                <li>
+                    <h3>Cómo puedo gener un tag?</h3>
+                    Genero un tag con el comando <code> git tag -a &lt;nombre_tag&gt; </code><br>
+		    Lo subo al repositorio con <code>git push origin --tags</code>
+                </li>
+                <li>
+                    <h3>Cómo hago una mezcla de ramas?</h3>
+                    Primero me posiciono en la rama de destino, por ejemplo main <code>git checkout main</code><br>
+		    Luego mezclo con la otra rama <code>git merge &lt;otra_rama&gt;</code>
+                </li>
+                <li>
+                    <h3>Cómo puedo moverme a un commit especifico?</h3>
+                    Debemos conseguir el hash del commit con <code>git log</code>, y luego un <code>git checkout &lt;hashDelCommit&gt;</code>
+                </li>
+                <li>
+                    <h3>Cómo puedo borrar una rama?</h3>
+                    Borrar una rama localmente: <code>git branch -d &lt;rama&gt;</code><br>
+		    Borrar una rama del repositorio remoto: <code>git push origin --delete &lt;rama&gt;</code><br>
+                </li>
+                <li>
+                    <h3>Cómo puedo borrar un tag?</h3>
+                    Borrar un tag localmente: <code>git tag -d &lt;tag&gt;</code><br>
+		    Borrar un tag del repositorio remoto: <code>git push origin --delete origin &lt;tag&gt;</code><br>
+                </li>
+                <li>
+                    <h3>Cómo puedo ver los cambios que estan por enviarse al repositorio?</h3>
+                    Con el comando <code>git status </code>
+                </li>
+                <li>
+                    <h3>Para que sirve el comando <em>git remote -v?</em></h3>
+                    Para ver con que repositorio remoto esta asociado tu repositorio local
+                </li>
+                <li>
+                    <h3>Cómo le digo a git cual es mi email y correo?</h3>
+                    <code>git config user.email "&lt;correo&gt;" </code>
+                </li>
+                <li>
+                    <h3>Cuales son los pasos para conectar git con github?</h3>
+                    En el repo local ejecutar: <code>git remote add origin &lt;ruta_repositorio&gt;</code>
+                </li>
+                <li>
+                    <h3>Cómo puedo crear un alias en git?</h3>
+                    Creo un alias con el comando: <code>git config --global alias.&lt;nombre_alias&gt; &lt;comando&gt;</code><br>			
+		Donde <em>nombre_alias</em> es la nueva forma con la que se podrá llamar al <em>comando</em>. <br>Por 
+                ejemplo: <code>git config --global alias.st status</code><br> Ahora se puede ejecutar <code>git st</code> con el mismo resultado que 
+                <code>git status</code> </li>
+            </ol>
+        </div>
+        <div id="footer">
+            <img height="50" src="https://repository-images.githubusercontent.com/242781977/c5441500-56ee-11ea-99dc-6a054dbe381d" alt="ticsacademy">
+        </div>
+    </div>
+</body>
+
+</html>
